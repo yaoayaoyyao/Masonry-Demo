@@ -13,6 +13,7 @@
 		9E2263D1232D4FD600BC15EE /* ThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E2263D0232D4FD600BC15EE /* ThirdViewController.m */; };
 		9E2263D5232D50C000BC15EE /* FirendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E2263D4232D50C000BC15EE /* FirendViewController.m */; };
 		9E2263D8232D50E300BC15EE /* SJYTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E2263D7232D50E300BC15EE /* SJYTableViewCell.m */; };
+		9E251CC1232E30C800ECF254 /* guanzhu_img5.png in Resources */ = {isa = PBXBuildFile; fileRef = 9E251CC0232E30C800ECF254 /* guanzhu_img5.png */; };
 		9E7A9A8523277D18002FDA41 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E7A9A8423277D18002FDA41 /* AppDelegate.m */; };
 		9E7A9A8823277D18002FDA41 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E7A9A8723277D18002FDA41 /* ViewController.m */; };
 		9E7A9A8B23277D18002FDA41 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E7A9A8923277D18002FDA41 /* Main.storyboard */; };
@@ -56,6 +57,7 @@
 		9E2263D4232D50C000BC15EE /* FirendViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirendViewController.m; sourceTree = "<group>"; };
 		9E2263D6232D50E300BC15EE /* SJYTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SJYTableViewCell.h; sourceTree = "<group>"; };
 		9E2263D7232D50E300BC15EE /* SJYTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SJYTableViewCell.m; sourceTree = "<group>"; };
+		9E251CC0232E30C800ECF254 /* guanzhu_img5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = guanzhu_img5.png; sourceTree = "<group>"; };
 		9E7A9A8023277D18002FDA41 /* Masonry-Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Masonry-Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E7A9A8323277D18002FDA41 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		9E7A9A8423277D18002FDA41 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -173,6 +175,7 @@
 		9E7A9A8223277D18002FDA41 /* Masonry-Demo */ = {
 			isa = PBXGroup;
 			children = (
+				9E251CC0232E30C800ECF254 /* guanzhu_img5.png */,
 				9E2263D2232D50AD00BC15EE /* Firend */,
 				9E2263CE232D4FC700BC15EE /* Third */,
 				9E2263CA232D4FB200BC15EE /* second */,
@@ -324,6 +327,7 @@
 			files = (
 				9E7A9A9023277D19002FDA41 /* LaunchScreen.storyboard in Resources */,
 				9E7A9A8D23277D19002FDA41 /* Assets.xcassets in Resources */,
+				9E251CC1232E30C800ECF254 /* guanzhu_img5.png in Resources */,
 				9E7A9A8B23277D18002FDA41 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

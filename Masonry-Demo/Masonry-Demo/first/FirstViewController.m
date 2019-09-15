@@ -28,6 +28,7 @@
     self.hidesBottomBarWhenPushed = YES;
     FirendViewController *firendViewController = [[FirendViewController alloc]init];
     firendViewController.title = @"朋友圈";
+    firendViewController.view.backgroundColor = [UIColor whiteColor];
     [self.navigationController pushViewController:firendViewController animated:YES];
 }
 

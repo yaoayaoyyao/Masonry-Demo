@@ -12,6 +12,10 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface SJYTableViewCell : UITableViewCell
 
+@property (nonatomic, strong)UILabel *firstNameLabel;
+@property (nonatomic, strong)UIImageView *firstImage;
+@property (nonatomic, strong)UILabel *firstLabel;
+
 @end
 
 NS_ASSUME_NONNULL_END

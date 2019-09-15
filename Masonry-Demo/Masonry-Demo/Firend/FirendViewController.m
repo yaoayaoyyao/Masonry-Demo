@@ -8,18 +8,12 @@
 
 #import "FirendViewController.h"
 #import "SJYTableViewCell.h"
+#import "Masonry.h"
 
 static NSString *str1 = @"SJYCell";
-@interface FirendViewController ()
+@interface FirendViewController ()<UITableViewDelegate,UITableViewDataSource>
 
 @property (nonatomic, strong)UITableView *firendTableView;
-@property  NSArray *arrayHead;
-@property NSArray *arrayName;
-@property NSArray *arrayTalk;
-@property NSArray *arraydidian;
-@property NSArray *arrayTime;
-@property NSArray *arraypic;
-@property NSArray *arraypic2;
 
 @end
 
@@ -28,6 +22,35 @@ static NSString *str1 = @"SJYCell";
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    _firendTableView = [[UITableView alloc]init];
+    _firendTableView.delegate = self;
+    _firendTableView.dataSource = self;
+    _firendTableView.showsVerticalScrollIndicator = NO;
+    [_firendTableView registerClass:[SJYTableViewCell class] forCellReuseIdentifier:str1];
+    [self.view addSubview:_firendTableView];
+    [_firendTableView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.size.mas_equalTo(CGSizeMake(375, 375));
+        make.center.equalTo(self.view);
+    }];
+}
+
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+    return 5;
+}
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return 1;
+}
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    return 150;
+}
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    SJYTableViewCell *firstTableViewCell = [_firendTableView dequeueReusableCellWithIdentifier:str1 forIndexPath:indexPath];
+    firstTableViewCell.layer.borderColor = [[UIColor blueColor]CGColor];
+    firstTableViewCell.layer.borderWidth = 1;
+    firstTableViewCell.layer.cornerRadius = 20;
+    firstTableViewCell.layer.masksToBounds = YES;
+    return firstTableViewCell;
 }
 
 /*
